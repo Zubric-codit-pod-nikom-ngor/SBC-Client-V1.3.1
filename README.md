@@ -1,6 +1,10 @@
 # SBC-Client-V1.3.1
 -----------=========== ENGLISH ===========-----------
 
+/////////////////////////////////////////
+Quick mention that you agree to privacy terms of all tools and programs used in this project if you download this repo on your device!
+/////////////////////////////////////////
+
 Simple Blockchain client. Based on my other repo with core module for python, which is public for everyone. This repo contains exclusive information, code and data that was not encrypted yet. I require you to be very careful.
 
 Also i wanted to mention that project was not supported with proper comments and the whole repo is just raw stuff from my project, that means it was not changed in any way.
@@ -28,10 +32,16 @@ A small walkthrough:
   
   7) UI.spec is a .spec file that configures compilator (pyinstaller to be exact) and you can just compile everything with ```pyinstaller UI.spec``` if you have it
   
-  8) pictures and videos are placeholders for main menu (drawn by me and you wouldn't beleve me it was made in powerpoint)
+  8) sbc setup compiler files.iss is a file from a program innoSetup, it mainly makes a setup, though the file may be incompatible with your device and you will have to manually change paths
+  
+  9) pictures and videos are placeholders for main menu (drawn by me and you wouldn't beleve me it was made in powerpoint)
 
 
 -----------=========== РУССКИЙ ===========-----------
+
+/////////////////////////////////////////
+Быстрое напоминание: при скачивании репозитория вы соглашаетесь на Условия Конфиденциальности всех инструментов, используемых в данном проекте
+/////////////////////////////////////////
 
 Программа-клиент блокчейна SBC. Данный репозиторий основан на другом моём репозитории с модулем-ядром для Python, который открыт для всех. Этот репозиторий содержит эксклюзивную информацию, код и данные, которые ещё не были зашифрованы. Прошу вас быть очень осторожными.
 
@@ -59,5 +69,7 @@ A small walkthrough:
   6) settings.stng - простой файл с базовыми пользовательскими настройками. Для его открытия не требуется ничего особенного, необычное расширение - просто для красоты.
 
   7) UI.spec - это файл типа .spec, который настраивает компилятор (точнее pyinstaller). Вы можете просто скомпилировать всё командой ```pyinstaller UI.spec```, если он у вас установлен.
+  
+  8) sbc setup compiler files.iss - файл программы innoSetup, он используется для создания установщика программы, возможно вам прийдётся поменять пути в файле вручную
 
-  8) картинки и видио - это заставки для главного меню (нарисованы мной, и вы не поверите, но это было сделано в PowerPoint).
+  9) картинки и видио - это заставки для главного меню (нарисованы мной, и вы не поверите, но это было сделано в PowerPoint).
