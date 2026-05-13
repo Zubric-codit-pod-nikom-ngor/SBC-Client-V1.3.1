@@ -8,6 +8,9 @@ Repo contains only barebones version of client, that means there are only essent
 
 Also if you wanted to look into the logs the program was making, it's in a corresponding dirrectory but you will see that count starts from somthing like 1600 because i cleaned a bunch of logs (something like 30000 files from testing and i was resetting counter every 3000 files) and forgot to reset the counter file (which you can do by yourself ^-^ ).
 
+A link for .exe setup: https://drive.google.com/file/d/1jcOoITVpSMfjd8BHtmOvBbsPATQgLMDF/view
+A link for my core repo:  https://github.com/Zubric-codit-pod-nikom-ngor/SBC-package
+
 A small walkthrough:
 
   1) sbc dirrectory is the place where the magic happens, there you can view blockchain structure, though is may be hard to navigate. Most important files for this section is base.py (which is actually the encrypted core in the base repo), essentials.py, aes256.py, deep_encoding.py. There are many other files, some of which contain a whole bunch of encodings, useless data or something used for testing. base.py file is a bridge between other mentioned files, it processes a user's connecton; essentials.py is a file filled with safety algorithms and Block, Chain classes; aes265.py is a file that makes working with encryption less painful; deep_encoding.py is a script that processes data and makes it easy to decode and encode data with multiple or one encoding even if it/they are unknown, it takes encodings from corresponding file.
@@ -35,6 +38,9 @@ A small walkthrough:
 Репозиторий содержит только базовую версию клиента, а значит здесь находятся только самые необходимые файлы (рекомендую не слишком полагаться на имена файлов и переменныъ в этом репозитории), программа не была заточена под модификацию - важная информация которую надо упомянуть, хотя некоторые аспекты поддаются лёгкому изменению.
 
 Если вы захотите посмотреть логи, которые создавала программа, они находятся в соответствующей директории, но вы увидите, что нумерация начинается примерно с 1600, потому что я удалил много логов (около 30000 файлов за время тестирования и сбрасывал счётчик каждые 3000 файлов) и забыл сбросить файл-счётчик (вы можете сделать это самостоятельно ^-^).
+
+Ссылка на .exe установщик: https://drive.google.com/file/d/1jcOoITVpSMfjd8BHtmOvBbsPATQgLMDF/view
+Ссылка на репозиторий с модулем-ядром:  https://github.com/Zubric-codit-pod-nikom-ngor/SBC-package
 
 Небольшое руководство:
 
