@@ -4,6 +4,8 @@ Simple Blockchain client. Based on my other repo with core module for python, wh
 Also i wanted to mention that project was not supported with proper comments and the whole repo is just raw stuff from my project, that means it was not changed in any way.
 Repo contains only barebones version of client, that means there are only essential files here, (i recommend not to trust the names in this repo completely, just so you know).
 
+Also if you wanted to look into the logs the program was making, it's in a corresponding dirrectory but you will see that count starts from somthing like 1600 because i cleaned a bunch of logs (something like 30000 files from testing and i was resetting counter every 3000 files) and forgot to reset the counter file (which you can do by yourself ^-^ ).
+
 A small walkthrough:
 
   1) sbc dirrectory is the place where the magic happens, there you can view blockchain structure, though is may be hard to navigate. Most important files for this section is base.py (which is actually the encrypted core in the base repo), essentials.py, aes256.py, deep_encoding.py. There are many other files, some of which contain a whole bunch of encodings, useless data or something used for testing.
