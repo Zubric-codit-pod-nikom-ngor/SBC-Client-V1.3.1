@@ -1,8 +1,10 @@
 # SBC-Client-V1.3.1
+-----------=========== ENGLISH ===========-----------
+
 Simple Blockchain client. Based on my other repo with core module for python, which is public for everyone. This repo contains exclusive information, code and data that was not encrypted yet. I require you to be very careful.
 
 Also i wanted to mention that project was not supported with proper comments and the whole repo is just raw stuff from my project, that means it was not changed in any way.
-Repo contains only barebones version of client, that means there are only essential files here, (i recommend not to trust the names in this repo completely, just so you know).
+Repo contains only barebones version of client, that means there are only essential files here, (i recommend not to trust the names in this repo completely, just so you know), program was not made for modding is something important to know though some things may be easily modified.
 
 Also if you wanted to look into the logs the program was making, it's in a corresponding dirrectory but you will see that count starts from somthing like 1600 because i cleaned a bunch of logs (something like 30000 files from testing and i was resetting counter every 3000 files) and forgot to reset the counter file (which you can do by yourself ^-^ ).
 
@@ -14,9 +16,9 @@ A small walkthrough:
   
   3) UI.py is the main script that works with UI, it is made with CustomTkinter, which documentation you can see here: https://customtkinter.tomschimansky.com/
   
-  4) error.vbs is a windows file that makes a simple message when program fails to load external ip through STUN, it is harmless and does nothing other than showing text
+  4) error.vbs is a windows file that makes a simple message when program fails to load external IP through STUN, it is harmless and does nothing other than showing text
   
-  5) requirements.txt is a file that lists every module you need to run this program in its raw state, it is made so that pycharm can recoginze it and automatically load everything needed
+  5) requirements.txt is a file that lists every module you need to run this program in its raw state, it is made so that PyCharm can recoginze it and automatically load everything needed
   
   6) settings.stng is a simple file that contains base user preferences, also it does not need anything special to open, the fancy file type is just for looks
   
@@ -24,4 +26,30 @@ A small walkthrough:
   
   8) pictures and videos are placeholders for main menu (drawn by me and you wouldn't beleve me it was made in powerpoint)
 
-  
+
+-----------=========== РУССКИЙ ===========-----------
+
+Программа-клиент блокчейна SBC. Данный репозиторий основан на другом моём репозитории с модулем-ядром для Python, который открыт для всех. Этот репозиторий содержит эксклюзивную информацию, код и данные, которые ещё не были зашифрованы. Прошу вас быть очень осторожными.
+
+Также хочу отметить, что проект не сопровождался должными комментариями, и весь репозиторий - это практически сырой (должно не отформатирован для просмотра пользователем, по функционалу он полностью рабочий) материал из моего проекта, то есть он никак не изменялся.
+Репозиторий содержит только базовую версию клиента, а значит здесь находятся только самые необходимые файлы (рекомендую не слишком полагаться на имена файлов и переменныъ в этом репозитории), программа не была заточена под модификацию - важная информация которую надо упомянуть, хотя некоторые аспекты поддаются лёгкому изменению.
+
+Если вы захотите посмотреть логи, которые создавала программа, они находятся в соответствующей директории, но вы увидите, что нумерация начинается примерно с 1600, потому что я удалил много логов (около 30000 файлов за время тестирования и сбрасывал счётчик каждые 3000 файлов) и забыл сбросить файл-счётчик (вы можете сделать это самостоятельно ^-^).
+
+Небольшое руководство:
+
+  1) sbc - директория, где происходит всё самое интересное. Здесь вы можете увидеть структуру блокчейна, хотя ориентироваться в ней может быть сложно. Самые важные файлы в этом разделе: base.py (на самом деле это зашифрованное ядро из основного репозитория), essentials.py, aes256.py, deep_encoding.py. Есть и много других файлов, некоторые из которых содержат множество кодировок, бесполезные данные или то, что использовалось для тестирования.
+
+  2) sbc_bootstrapping - здесь клиент находит правильные источники для подключения к блокчейну. Всё довольно просто. Если вы хотите поднять свой собственный сервер для bootstrapping-а, рекомендую запустить bootsrapping_server.py (который находится не в той же директории, о которой мы говорим) и настроить в файле sources.json источники, к которым клиент будет пытаться подключиться, он будет соотвественно способен подключиться к новым источникам только после запуска именно вашей программы, остальные клиенты не будут способны обратиться к вашему источнику.
+
+  3) UI.py - главный скрипт, который работает с интерфейсом. Он сделан с помощью customtkinter, документацию можно посмотреть здесь: https://customtkinter.tomschimansky.com/
+
+  4) error.vbs - это файл windows, который выводит простое сообщение, когда программе не удаётся получить внешний IP через STUN. Он безвреден и ничего не делает, кроме отображения текста.
+
+  5) requirements.txt - файл со списком всех модулей, необходимых для запуска программы в её нескомпилированном виде. Он сделан так, чтобы PyCharm мог его распознать и автоматически загрузить всё нужное.
+
+  6) settings.stng - простой файл с базовыми пользовательскими настройками. Для его открытия не требуется ничего особенного, необычное расширение - просто для красоты.
+
+  7) UI.spec - это файл типа .spec, который настраивает компилятор (точнее pyinstaller). Вы можете просто скомпилировать всё командой ```pyinstaller UI.spec```, если он у вас установлен.
+
+  8) картинки и видио - это заставки для главного меню (нарисованы мной, и вы не поверите, но это было сделано в PowerPoint).
