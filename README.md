@@ -2,7 +2,9 @@
 -----------=========== ENGLISH ===========-----------
 
 /////////////////////////////////////////
+
 Quick mention that you agree to privacy terms of all tools and programs used in this project if you download this repo on your device!
+
 /////////////////////////////////////////
 
 Simple Blockchain client. Based on my other repo with core module for python, which is public for everyone. This repo contains exclusive information, code and data that was not encrypted yet. I require you to be very careful.
@@ -40,7 +42,9 @@ A small walkthrough:
 -----------=========== РУССКИЙ ===========-----------
 
 /////////////////////////////////////////
+
 Быстрое напоминание: при скачивании репозитория вы соглашаетесь на Условия Конфиденциальности всех инструментов, используемых в данном проекте
+
 /////////////////////////////////////////
 
 Программа-клиент блокчейна SBC. Данный репозиторий основан на другом моём репозитории с модулем-ядром для Python, который открыт для всех. Этот репозиторий содержит эксклюзивную информацию, код и данные, которые ещё не были зашифрованы. Прошу вас быть очень осторожными.
