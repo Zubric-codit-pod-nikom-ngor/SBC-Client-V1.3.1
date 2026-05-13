@@ -1,0 +1,1 @@
+x=msgbox("failed to fetch external ip, please restart the app", 0, "error with external ip")
