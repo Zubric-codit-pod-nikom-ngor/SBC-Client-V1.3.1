@@ -9,6 +9,7 @@ Repo contains only barebones version of client, that means there are only essent
 Also if you wanted to look into the logs the program was making, it's in a corresponding dirrectory but you will see that count starts from somthing like 1600 because i cleaned a bunch of logs (something like 30000 files from testing and i was resetting counter every 3000 files) and forgot to reset the counter file (which you can do by yourself ^-^ ).
 
 A link for .exe setup: https://drive.google.com/file/d/1jcOoITVpSMfjd8BHtmOvBbsPATQgLMDF/view
+
 A link for my core repo:  https://github.com/Zubric-codit-pod-nikom-ngor/SBC-package
 
 A small walkthrough:
@@ -40,6 +41,7 @@ A small walkthrough:
 Если вы захотите посмотреть логи, которые создавала программа, они находятся в соответствующей директории, но вы увидите, что нумерация начинается примерно с 1600, потому что я удалил много логов (около 30000 файлов за время тестирования и сбрасывал счётчик каждые 3000 файлов) и забыл сбросить файл-счётчик (вы можете сделать это самостоятельно ^-^).
 
 Ссылка на .exe установщик: https://drive.google.com/file/d/1jcOoITVpSMfjd8BHtmOvBbsPATQgLMDF/view
+
 Ссылка на репозиторий с модулем-ядром:  https://github.com/Zubric-codit-pod-nikom-ngor/SBC-package
 
 Небольшое руководство:
