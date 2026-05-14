@@ -24,20 +24,22 @@ A small walkthrough:
   1) sbc dirrectory is the place where the magic happens, there you can view blockchain structure, though is may be hard to navigate. Most important files for this section is base.py (which is actually the encrypted core in the base repo), essentials.py, aes256.py, deep_encoding.py. There are many other files, some of which contain a whole bunch of encodings, useless data or something used for testing. base.py file is a bridge between other mentioned files, it processes a user's connecton; essentials.py is a file filled with safety algorithms and Block, Chain classes; aes265.py is a file that makes working with encryption less painful; deep_encoding.py is a script that processes data and makes it easy to decode and encode data with multiple or one encoding even if it/they are unknown, it takes encodings from corresponding file.
   
   2) sbc_bootstrapping is the place where client finds correct sources for connecting to blockchain, it is pretty straigt forward and if you want to open your own server for bootstrapping i recommend running bootsrapping_server.py which is not in the same dirrectory we are talking about and configuring which sources would client try to connect to in sources.json file.
+
+  3) sbc\essential_files\string_megers.py is a file that i dedicate this paragraph. It was made specially after 3 months of work and it includes brand new, not known to the world string merging and difference finding anchoring algorithms. So what it does? It finds a difference in 2 strings (using diff-match-patch module) and adds up to 6 symbols on each side to every difference, then if you want to merge the change you'd need to plug it into another function that does the opposite: it merges two strings based on these unique 6 letter ends on each side of second string (that's why i called the algorithm anchoring), also it supports strings that have many repeating symbols and unique strings in between. Really useful
   
-  3) UI.py is the main script that works with UI, it is made with CustomTkinter, which documentation you can see here: https://customtkinter.tomschimansky.com/
+  4) UI.py is the main script that works with UI, it is made with CustomTkinter, which documentation you can see here: https://customtkinter.tomschimansky.com/
   
-  4) error.vbs is a windows file that makes a simple message when program fails to load external IP through STUN, it is harmless and does nothing other than showing text
+  5) error.vbs is a windows file that makes a simple message when program fails to load external IP through STUN, it is harmless and does nothing other than showing text
   
-  5) requirements.txt is a file that lists every module you need to run this program in its raw state, it is made so that PyCharm can recoginze it and automatically load everything needed
+  6) requirements.txt is a file that lists every module you need to run this program in its raw state, it is made so that PyCharm can recoginze it and automatically load everything needed
   
-  6) settings.stng is a simple file that contains base user preferences, also it does not need anything special to open, the fancy file type is just for looks
+  7) settings.stng is a simple file that contains base user preferences, also it does not need anything special to open, the fancy file type is just for looks
   
-  7) UI.spec is a .spec file that configures compilator (pyinstaller to be exact) and you can just compile everything with ```pyinstaller UI.spec``` if you have it
+  8) UI.spec is a .spec file that configures compilator (pyinstaller to be exact) and you can just compile everything with ```pyinstaller UI.spec``` if you have it
   
-  8) sbc setup compiler files.iss is a file from a program innoSetup, it mainly makes a setup, though the file may be incompatible with your device and you will have to manually change paths
+  9) sbc setup compiler files.iss is a file from a program innoSetup, it mainly makes a setup, though the file may be incompatible with your device and you will have to manually change paths
   
-  9) pictures and videos are placeholders for main menu (drawn by me and you wouldn't beleve me it was made in powerpoint)
+  10) pictures and videos are placeholders for main menu (drawn by me and you wouldn't beleve me it was made in powerpoint)
 
 
 -----------=========== РУССКИЙ ===========-----------
@@ -66,16 +68,18 @@ A small walkthrough:
 
   2) sbc_bootstrapping - здесь клиент находит правильные источники для подключения к блокчейну. Всё довольно просто. Если вы хотите поднять свой собственный сервер для bootstrapping-а, рекомендую запустить bootsrapping_server.py (который находится не в той же директории, о которой мы говорим) и настроить в файле sources.json источники, к которым клиент будет пытаться подключиться, он будет соотвественно способен подключиться к новым источникам только после запуска именно вашей программы, остальные клиенты не будут способны обратиться к вашему источнику.
 
-  3) UI.py - главный скрипт, который работает с интерфейсом. Он сделан с помощью customtkinter, документацию можно посмотреть здесь: https://customtkinter.tomschimansky.com/
+  3) sbc\essential_files\string_megers.py (выделено отдельным пунктом из-за огромного потраченного на файл времени) - файл, который разробатывался 3 месяца, он позволяет работать с 2 строками: получать их различия и соединять их, и всё это выполняется уникальным и до этого неизвестным миру алгоритмом якорного соединения. Чтобы получить различия 2 строк, используется модуль diff-match-patch, после нескольких обработок алгоритм находит источник изменения и вырезает по 6 символов из первоначальной строки с двух сторон изменения (звучит трудно, но на деле это будет выглядеть так: "я люблю пельмени с майонезом" - "пельмени" => "люблю пельмени с май", по 6 символов из первой строки), функция же соединения 2 строк делает обратное, она распознаёт 12 уникальных симоволов с концов второй строки и уникальным алгоритмом внедряет вторую строку в первую (из-за использования концов по 6 строк, я называю алгоритм якорным), также данная функция поддерживает работу с другими строками, которые включают 2 или более изменений.
 
-  4) error.vbs - это файл windows, который выводит простое сообщение, когда программе не удаётся получить внешний IP через STUN. Он безвреден и ничего не делает, кроме отображения текста.
+  4) UI.py - главный скрипт, который работает с интерфейсом. Он сделан с помощью customtkinter, документацию можно посмотреть здесь: https://customtkinter.tomschimansky.com/
 
-  5) requirements.txt - файл со списком всех модулей, необходимых для запуска программы в её нескомпилированном виде. Он сделан так, чтобы PyCharm мог его распознать и автоматически загрузить всё нужное.
+  5) error.vbs - это файл windows, который выводит простое сообщение, когда программе не удаётся получить внешний IP через STUN. Он безвреден и ничего не делает, кроме отображения текста.
 
-  6) settings.stng - простой файл с базовыми пользовательскими настройками. Для его открытия не требуется ничего особенного, необычное расширение - просто для красоты.
+  6) requirements.txt - файл со списком всех модулей, необходимых для запуска программы в её нескомпилированном виде. Он сделан так, чтобы PyCharm мог его распознать и автоматически загрузить всё нужное.
 
-  7) UI.spec - это файл типа .spec, который настраивает компилятор (точнее pyinstaller). Вы можете просто скомпилировать всё командой ```pyinstaller UI.spec```, если он у вас установлен.
+  7) settings.stng - простой файл с базовыми пользовательскими настройками. Для его открытия не требуется ничего особенного, необычное расширение - просто для красоты.
+
+  8) UI.spec - это файл типа .spec, который настраивает компилятор (точнее pyinstaller). Вы можете просто скомпилировать всё командой ```pyinstaller UI.spec```, если он у вас установлен.
   
-  8) sbc setup compiler files.iss - файл программы innoSetup, он используется для создания установщика программы, возможно вам прийдётся поменять пути в файле вручную
+  9) sbc setup compiler files.iss - файл программы innoSetup, он используется для создания установщика программы, возможно вам прийдётся поменять пути в файле вручную
 
-  9) картинки и видио - это заставки для главного меню (нарисованы мной, и вы не поверите, но это было сделано в PowerPoint).
+  10) картинки и видио - это заставки для главного меню (нарисованы мной, и вы не поверите, но это было сделано в PowerPoint).
