@@ -5,7 +5,7 @@
 ## ENGLISH VERSION
 
 
-> Quick mention that you agree to privacy terms of all tools and programs used in this project if you download this repo on your device! And also this repo will be converted into private after some time!
+> Quick mention that you agree to privacy terms of all tools and programs used in this project if you download this repo on your device! And also this repo will be converted into private after some time! And also see ```requirements.txt``` for all used external packages!
 
 ---
 
@@ -49,7 +49,7 @@ A link for my **core repo**:  https://github.com/Zubric-codit-pod-nikom-ngor/SBC
 ## РУССКИЙ
 
 
-> Быстрое напоминание: при скачивании репозитория вы соглашаетесь на Условия Конфиденциальности всех инструментов, используемых в данном проекте. Также данный репозиторий станет приватным через некоторое время!
+> Быстрое напоминание: при скачивании репозитория вы соглашаетесь на Условия Конфиденциальности всех инструментов, используемых в данном проекте. Также данный репозиторий станет приватным через некоторое время! Также смотрите ```requirements.txt``` на наличие всех подкачанных для работы программы пакетов!
 
 ---
 
